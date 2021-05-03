@@ -2,6 +2,8 @@
 
 This project uses Quarkus Java Framework. (https://quarkus.io/)
 
+> **_NOTE:_**  Please update mongoDB connection string in Application.properties as per your setup.
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
@@ -9,7 +11,7 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  
+
 
 ## Packaging and running the application
 
