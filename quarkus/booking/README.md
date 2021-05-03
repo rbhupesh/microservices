@@ -25,8 +25,11 @@ This project intgrates mongoDB with Quarkus
 
 ## urls:
 http://localhost:8080/parkings/api/v2/bookings
+
 http://localhost:8080/parkings/api/v2/bookings/{date}/{hour}
+
 http://localhost:8080/parkings/api/v2/bookings/{date}/{hour}/{custId}
+
 
 ## Sample schema
 
