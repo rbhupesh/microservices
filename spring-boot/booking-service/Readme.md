@@ -1,6 +1,6 @@
 # Booking project
 
-This project uses Quarkus Java Framework. (https://quarkus.io/)
+This project uses Spring-boot Framework.
 
 > **_NOTE:_**  Please update mongoDB connection string in Application.properties as per your setup.
 
