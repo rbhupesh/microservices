@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.myorg.booking.dao.BookingDao;
 import com.myorg.booking.mongo.entity.Booking;
@@ -21,6 +23,7 @@ public class BookingDaoImpl implements BookingDao {
 	private MongoTemplate mongoTemplate;
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
 	public Booking addNewBooking(Booking newCustomer) {
 		System.out.println("##### CustomerDaoImpl.addCustomer() STARTED!!!  #####");
 
@@ -55,6 +58,7 @@ public class BookingDaoImpl implements BookingDao {
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
 	public Booking add2CurrentBooking(Booking booking) {
 		Booking updatedBooking = bookingRepository.save(booking);
 		System.out.println("##### CustomerDaoImpl.add2CurrentBooking() executed!!!  #####");

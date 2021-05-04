@@ -3,6 +3,7 @@ package com.myorg.booking.mongo.entity;
 import java.util.Arrays;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "bookings")
@@ -14,6 +15,9 @@ public class Booking {
 	String date = "";
 	String hour = "";
 	String[] bookings;
+	
+	@Version
+	int version;
 
 	public Booking() {		
 	}

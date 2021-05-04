@@ -16,7 +16,7 @@
 	<artifactId>booking-service</artifactId>
 	<version>0.0.1</version> <!-- 0.0.1-SNAPSHOT -->
 	<name>booking-service</name>
-	<description>customer management</description>
+	<description>parking management</description>
 
 	<properties>
 		<java.version>14</java.version>
@@ -68,9 +68,8 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.4.8</version>  <!-- latest is 1.4.8 -->
+			<version>1.4.8</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -81,13 +80,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>a0nr542ksgwvn-artifactory-primary-0-releases</name>
-			<url>https://rbhupesh.jfrog.io/artifactory/libs-release</url>
-		</repository>
-	</distributionManagement>
-
 </project>

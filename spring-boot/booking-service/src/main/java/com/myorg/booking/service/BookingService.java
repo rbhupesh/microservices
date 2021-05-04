@@ -12,5 +12,8 @@ public interface BookingService {
 	public List<Booking> getAllBookings();
 
 	public Booking getBookingByCriteria(CustomerBooking customerBooking);
+	
+	public List<Booking> add2BookingsNonTransactional(CustomerBooking customerBooking);
+	public List<Booking> add2BookingsTransactional(CustomerBooking customerBooking);
 
 }
