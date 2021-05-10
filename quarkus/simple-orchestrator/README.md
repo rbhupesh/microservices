@@ -4,10 +4,11 @@ This project uses Quarkus Java Framework. (https://quarkus.io/)
 
 > **_NOTE:_**  This orchestrator is stateful blocking implementation of saga pattern further enhancement to this orchestrator is externalise state from orchestrator and integrate with persistent queue (e.g. rabit mq or kafka)
 
-It created workflow with set of ordered task and tries to execute task in a sequence.
+It creates workflow with set of ordered task and tries to execute task in a sequence.
 If any task fails it stops the execution for rest of the task and tries to execute rollback for executed task.
 
-task.execute() & task.rollbackExecute() can be annoteted with retry annotation
+task.execute() & task.rollbackExecute() can be annoteted with 
+@Timeout , @Fallback , @Retry annotation
 
 ## Running test case
 
