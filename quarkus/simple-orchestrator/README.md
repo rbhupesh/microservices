@@ -7,8 +7,7 @@ This project uses Quarkus Java Framework. (https://quarkus.io/)
 It created workflow with set of ordered task and tries to execute task in a sequence.
 If any task fails it stops the execution for rest of the task and tries to execute rollback for executed task.
 
-task.
-task.
+task.execute() & task.rollbackExecute() can be annoteted with retry annotation
 
 ## Running test case
 
