@@ -19,22 +19,40 @@ mvn clean compile test
 Its output as follows
 
 '##### OrderResource.addOrder() STARTED!!!  #####
+
 '##### OrchestratorService.orderProduct() STARTED!!!  #####
+
 OrderTask.execute() maps :
+
 PaymentTask.execute() maps :
+
 InventoryTask.execute() maps :
+
 ERROR :
+
 OrderTask.rollbackExecute() maps :
+
 PaymentTask.rollbackExecute() maps :
+
 InventoryTask.rollbackExecute() maps :
+
 Print task status:
+
 OrderTask::ROLLBACKED
+
 OrderTask::ROLLBACKED
+
 InventoryTask::ROLLBACKED
+
 LogisticTask::OPEN
+
 '##### OrchestratorService.orderProduct() ENDS!!!  #####
+
 '##### ResponseEntity booking:#
+
 rbhupesh,sa70,NAN,0.0,
+
 '##### OrderResource.addOrder() executed!!!  #####
+
 
 
