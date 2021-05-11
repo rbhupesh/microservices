@@ -11,7 +11,7 @@ This project uses Spring-boot Framework.
 mvn clean compile test package
 ```
 
-This project intgrates mongoDB with Quarkus 
+This project intgrates mongoDB with Spring-boot 
 ```shell script
 java -jar .\target\booking-service-0.0.1.jar
 ```
