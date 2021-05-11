@@ -1,0 +1,10 @@
+package KieRule;
+import com.rb.rules.entity.Order;
+
+rule "ABCD"
+when
+orderObject : Order(cardType=="ABCD" && price>10000);
+then
+orderObject.setDiscount(15);
+System.out.println( "ABCD " +orderObject.getName() );
+end;
